@@ -88,6 +88,15 @@ File uploaded to source S3 bucket → Glue ETL job moves file to `unprocess_file
 
 ![Eventbridge rule Diagram](https://raw.githubusercontent.com/wnityanand/US_Rental_market_analysis_using_ZORI_Index/main/AWS_Architecture/Eventbridge_rule.png)
 
+## Data Visualization using Grafana Dashboard
+
+1. **Data Source Connection:** Grafana was configured to connect directly to Amazon Athena, using the AWS Glue Data Catalog as the metadata repository. This allowed the dashboard to query the transformed ZORI data seamlessly.
+2. **Athena Query Development and Testing:** I built and tested the SQL queries in Amazon Athena to ensure accurate and efficient data retrieval. These queries were then integrated into Grafana.
+3. **SQL Query Integration:** The Athena SQL queries, specifically those designed to identify and rank volatile markets, were incorporated into individual panels within the Grafana dashboard.
+
+The Grafana dashboard provides a user-friendly interface for monitoring and analyzing rental market trends, derived from the data pipeline and analytical queries.
+
+
 
 
 
