@@ -1,1 +1,1 @@
-
+AWS architecture snapshot
