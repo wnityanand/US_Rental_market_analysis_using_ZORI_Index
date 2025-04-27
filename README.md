@@ -28,6 +28,8 @@ Automated pipeline analyzing Zillow's ZORI Index data to:
 • Analytics: Amazon Athena  
 • Visualization: Grafana
 
+![Architecture Diagram] (AWS_Architecture.png)
+
 
 
 
