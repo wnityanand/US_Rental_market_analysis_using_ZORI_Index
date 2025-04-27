@@ -46,6 +46,49 @@ Once a raw file has been successfully processed and cataloged by the AWS Glue Cr
 
 This folder structure ensures clear separation between raw, processed, and archived data, enabling robust data management and traceability throughout the pipeline.
 
+## Data Ingestion and Transformation Workflow
+
+The project implements an automated pipeline for processing Zillow ZORI data using AWS services. The workflow is as follows:
+
+1. **File Transfer & Organization:**  
+   An AWS Glue ETL job moves new data files from the source S3 bucket to the `Zillow_data_input/unprocess_file` subfolder. This job ensures data integrity by verifying successful transfers before deleting the original files from the source bucket.
+
+2. **Event-Driven Processing:**  
+   When a file lands in the `unprocess_file` subfolder, an EventBridge rule triggers an AWS Glue workflow for real-time processing.
+
+3. **Data Transformation:**  
+   - The **AWS Glue ETL job** unpivots the data: monthly ZORI columns (e.g., `2015-01-31`, `2015-02-28`, ..., `2025-03-31` from the sample CSV) are converted into two columns, `Date` and `ZORI`, making the dataset more suitable for analytics.
+   - Transformed and partitioned data is written to the `transformed_data` subfolder.
+
+**Example of Unpivoting (performed by the Glue Job):**
+
+| RegionID | RegionName   | 2021-01-31 | 2021-02-28 | ... |
+|----------|--------------|------------|------------|-----|
+| 102001   | United States | 1479.84    | 1488.12    | ... |
+
+**Becomes:**
+
+| RegionID | RegionName   | Date       | ZORI     |
+|----------|--------------|------------|----------|
+| 102001   | United States | 2021-01-31 | 1479.84  |
+| 102001   | United States | 2021-02-28 | 1488.12  |
+| ...      | ...          | ...        | ...      |
+
+4. **Archival:**  
+   Once transformation is complete, the original raw file is moved to the `process_file` subfolder for archival and traceability.
+
+5. **Schema Cataloging:**  
+   The AWS Glue Crawler scans the transformed data, infers the schema (column names, data types, etc.), and updates the Glue Data Catalog. This enables seamless querying in Amazon Athena and supports downstream analytics and visualization.
+
+**Workflow Summary:**  
+File uploaded to source S3 bucket → Glue ETL job moves file to `unprocess_file` (verifies & deletes source) → EventBridge triggers Glue workflow → **Glue job** transforms data and saves to `transformed_data` → Raw file archived in `process_file` → Glue Crawler updates Data Catalog.
+
+
+
+
+
+
+
 
 
 
