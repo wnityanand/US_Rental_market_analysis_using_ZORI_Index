@@ -31,6 +31,20 @@ Automated pipeline analyzing Zillow's ZORI Index data to:
 ![Architecture Diagram](https://raw.githubusercontent.com/wnityanand/US_Rental_market_analysis_using_ZORI_Index/main/AWS_Architecture.png)
 
 ## **Data Ingestion**
+**1.S3 Bucket structure**
+
+The **Zillow_data_input** S3 bucket is organized into three main subfolders to support efficient data processing and tracking:
+
+**Unprocess_file:**
+This folder stores all newly uploaded files that have not yet been processed. It serves as the initial landing zone for raw data.
+
+**Transformed_data:**
+After a file is picked up by an AWS Glue job, it is transformed and partitioned. The resulting processed files are saved in this folder, ready for downstream analytics.
+
+**Process_file:**
+Once a raw file has been successfully processed and cataloged by the AWS Glue Crawler, it is moved to this folder for archival purposes. This helps maintain a clear record of all files that have completed the ETL and cataloging process.
+
+This folder structure ensures clear separation between raw, processed, and archived data, enabling robust data management and traceability throughout the pipeline.
 
 
 
