@@ -21,14 +21,17 @@ Automated pipeline analyzing Zillow's ZORI Index data to:
 - Analyze Intercities rent
 
 ## **Tech stack**  
-• Data Source: Zillow ZORI data  
-• Storage: Amazon S3  
-• Compute: AWS Glue  
-• Orchestration: AWS Glue Workflows, EventBridge Rule  
-• Analytics: Amazon Athena  
-• Visualization: Grafana
+• **Data Source**: Zillow ZORI data  
+• **Storage**: Amazon S3  
+• **Compute**: AWS Glue  
+• **Orchestration**: AWS Glue Workflows, EventBridge Rule  
+• **Analytics**: Amazon Athena  
+• **Visualization**: Grafana
 
 ![Architecture Diagram](https://raw.githubusercontent.com/wnityanand/US_Rental_market_analysis_using_ZORI_Index/main/AWS_Architecture.png)
+
+## **Data Ingestion**
+
 
 
 
