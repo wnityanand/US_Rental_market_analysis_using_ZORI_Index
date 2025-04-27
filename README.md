@@ -28,7 +28,8 @@ Automated pipeline analyzing Zillow's ZORI Index data to:
 • Analytics: Amazon Athena  
 • Visualization: Grafana
 
-![Architecture Diagram] (AWS_Architecture.png)
+![AWS Architecture](https://raw.githubusercontent.com/wnityanans/US_Rental_market_analysis_using_ZORI_Index/main/AWS_Architecture.png)
+
 
 
 
