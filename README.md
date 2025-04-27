@@ -96,7 +96,17 @@ File uploaded to source S3 bucket → Glue ETL job moves file to `unprocess_file
 
 The Grafana dashboard provides a user-friendly interface for monitoring and analyzing rental market trends, derived from the data pipeline and analytical queries.
 
-[PDF](https://raw.githubusercontent.com/wnityanand/US_Rental_market_analysis_using_ZORI_Index/main/Data_Visualization/Zillow_ZORI_Index_Analysis.pdf)
+![Preview](Data_Visualization/Zori_Preview%20.png)[PDF](https://raw.githubusercontent.com/wnityanand/US_Rental_market_analysis_using_ZORI_Index/main/Data_Visualization/Zori_index_analysis.pdf)
+
+![V1](https://raw.githubusercontent.com/wnityanand/US_Rental_market_analysis_using_ZORI_Index/main/Data_Visualization/Most_stable_and_volatile_market.PNG)
+![V1](https://raw.githubusercontent.com/wnityanand/US_Rental_market_analysis_using_ZORI_Index/main/Data_Visualization/rental_growth_in_usa.PNG)
+![V1](https://raw.githubusercontent.com/wnityanand/US_Rental_market_analysis_using_ZORI_Index/main/Data_Visualization/Intercities_rent_analysis.png)
+
+
+
+
+
+
 
 
 
