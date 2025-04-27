@@ -20,11 +20,12 @@ Automated pipeline analyzing Zillow's ZORI Index data to:
 - Identify top 10 states with highest cumulative rent growth
 - Analyze Intercities rent
 
-##Tech stack##
+### **Tech stack**  
 • Data Source: Zillow ZORI data  
 • Storage: Amazon S3  
 • Compute: AWS Glue  
 • Orchestration: AWS Glue Workflows, EventBridge Rule  
 • Analytics: Amazon Athena  
 • Visualization: Grafana
+
 
