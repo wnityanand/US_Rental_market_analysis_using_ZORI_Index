@@ -20,7 +20,7 @@ Automated pipeline analyzing Zillow's ZORI Index data to:
 - Identify top 10 states with highest cumulative rent growth
 - Analyze Intercities rent
 
-## **Tech stack**  
+## Tech stack
 • **Data Source**: Zillow ZORI data  
 • **Storage**: Amazon S3  
 • **Compute**: AWS Glue  
@@ -30,7 +30,7 @@ Automated pipeline analyzing Zillow's ZORI Index data to:
 
 ![Architecture Diagram](https://raw.githubusercontent.com/wnityanand/US_Rental_market_analysis_using_ZORI_Index/main/AWS_Architecture.png)
 
-## **Data Ingestion**
+## Data Ingestion
 **1.S3 Bucket structure**
 
 The **Zillow_data_input** S3 bucket is organized into three main subfolders to support efficient data processing and tracking:
