@@ -96,11 +96,24 @@ File uploaded to source S3 bucket → Glue ETL job moves file to `unprocess_file
 
 The Grafana dashboard provides a user-friendly interface for monitoring and analyzing rental market trends, derived from the data pipeline and analytical queries.
 
-![Preview](Data_Visualization/Zori_Preview%20.png)[PDF](https://raw.githubusercontent.com/wnityanand/US_Rental_market_analysis_using_ZORI_Index/main/Data_Visualization/Zori_index_analysis.pdf)
+![Preview](Data_Visualization/Zori_Preview%20.png)[PDF Copy of Visualization](https://raw.githubusercontent.com/wnityanand/US_Rental_market_analysis_using_ZORI_Index/main/Data_Visualization/Zori_index_analysis.pdf)
 
 ![V1](https://raw.githubusercontent.com/wnityanand/US_Rental_market_analysis_using_ZORI_Index/main/Data_Visualization/Most_stable_and_volatile_market.PNG)
 ![V1](https://raw.githubusercontent.com/wnityanand/US_Rental_market_analysis_using_ZORI_Index/main/Data_Visualization/rental_growth_in_usa.PNG)
 ![V1](https://raw.githubusercontent.com/wnityanand/US_Rental_market_analysis_using_ZORI_Index/main/Data_Visualization/Intercities_rent_analysis.png)
+
+
+## Key Findings:
+
+*   **Most Stable Markets:** Cleveland, OH, and Philadelphia, PA, are identified as the most stable rental markets based on ZORI fluctuations.
+*   **Most Volatile Markets:** Edwards, CO, and Jackson, WY, are among the most volatile, attributed to smaller inventories and seasonal demand.
+*   **National Rent Growth:** The ZORI in the USA has increased approximately 3.5% over the past year (compared to March 2025).
+*   **Highest Share of National Rent by State:** Hawaii (HI) and California (CA) have the highest share of the national rent.
+*   **Fastest Growing Rental Markets (Year-over-Year):** Rock Springs, WY, and Shelton, WA, exhibit the highest year-over-year rental growth.
+*   **States with Highest Cumulative Rent Growth (2021-2025):** Wyoming (WY) and Hawaii (HI) experienced the highest cumulative growth from 2021-2025.
+
+**Note:** This analysis uses Zillow's Observed Rent Index (ZORI) to provide a comprehensive view of rental market dynamics, considering factors beyond just rent price changes.
+
 
 
 
