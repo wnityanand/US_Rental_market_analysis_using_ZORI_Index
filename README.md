@@ -83,6 +83,11 @@ The project implements an automated pipeline for processing Zillow ZORI data usi
 **Workflow Summary:**  
 File uploaded to source S3 bucket → Glue ETL job moves file to `unprocess_file` (verifies & deletes source) → EventBridge triggers Glue workflow → **Glue job** transforms data and saves to `transformed_data` → Raw file archived in `process_file` → Glue Crawler updates Data Catalog.
 
+![Glue workflow Diagram](https://raw.githubusercontent.com/wnityanand/US_Rental_market_analysis_using_ZORI_Index/main/AWS_Architecture/Glue_workflow.png)
+
+
+![Eventbridge rule Diagram](https://raw.githubusercontent.com/wnityanand/US_Rental_market_analysis_using_ZORI_Index/main/AWS_Architecture/Eventbridge_rule.png)
+
 
 
 
