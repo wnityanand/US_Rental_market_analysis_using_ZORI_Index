@@ -2,7 +2,7 @@
 ## **US rental market analysis using ZORI index data**  
 
 
-This project automates the analysis of Zillow's ZORI data to identify rental market growth trends across the US from 2021-2025. The data pipeline, triggered by manual file uploads to S3, uses AWS Glue for ETL, Athena for SQL analytics, and Grafana for visualization, providing insights into market volatility and regional rental growth.
+This project automates the analysis of Zillow's ZORI data to identify rental market growth trends across the US from 2021-2025. This ie event driven pipeline, triggered by manual file uploads to S3, uses AWS Glue for ETL, Athena for SQL analytics, and Grafana for visualization, providing insights into market volatility and regional rental growth.
 
 ZORI Index:
 The Zillow Observed Rent Index (ZORI) is calculated to show how typical rents are changing over time in a specific area, like a city or metro region.
