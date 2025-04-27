@@ -1,6 +1,6 @@
-US Rental market analysis using ZORI index data (2021-2025)
-**End-to-End Event driven Data Pipeline for Identifying Stable/Unstable Rental Markets**  
-*AWS Data Pipeline with Automated ETL, Cataloging, and Visualization*
+
+## **US rental market analysis using ZORI index data**  
+
 
 This project automates the analysis of Zillow's ZORI data to identify rental market stability and growth trends across the US from 2021-2025. The data pipeline, triggered by manual file uploads to S3, uses AWS Glue for ETL, Athena for SQL analytics, and Grafana for visualization, providing insights into market volatility and regional rental growth.
 
